@@ -15,7 +15,7 @@ disease_symptoms = {
     "Fever": ["fever", "sweating", "chills", "body aches", "weakness"]
 }
 
-#Using manual dataset as disease dataset found on kaggle unupdated and government doesn't provide one
+#Using manual dataset. As disease dataset found on kaggle unupdated and government doesn't provide one
 
 def calculate_matching_score(user_symptoms, disease_symptoms):
     matched_count = sum(symptom in user_symptoms for symptom in disease_symptoms)
